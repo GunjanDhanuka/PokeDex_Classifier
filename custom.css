@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+/*
+-----------------------
+    MAIN APP
+-----------------------
+*/
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.6;
+  background: rgb(250, 209, 155);
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(38,39,48,0);
+}
+/*
+----------------------
+      TITLE
+----------------------
+*/
+h1{
+    color: #000;
+    text-align: center;
+  }
+  h3{
+    color: #000;
+  }
+  p{
+    color: #000;
+  }
+  /*
+  ----------------------
+        BUTTONS
+  ----------------------
+  */
+  .stButton > button {
+    background-color: #ffca47;
+    color: #000;
+    border-style:none;
+    z-index: 4;
+    margin-left: 45%;
+  }
+  .stButton > button:hover {
+    background-color: #333333;
+    color: #fff;
+  }
+  
+  
+  .stTextInput
+  {
+    color: #000000;
+  }
+  .stTextInput > div > div > input {
+    color: #000000;
+  }
