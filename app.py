@@ -203,6 +203,8 @@ def main():
 The model might have some difficulty in differentiating between evolved forms of a Pokemon for example Pidgeotto and Pidgeot!.''')
     st.image('git_images/kanto.png')
 
+def path_to_image_html(path):
+    return '<img src="'+ path + '" width="60" >'
 
 def predict(image):
     classifier_model = "model_pokemon.h5"
@@ -229,11 +231,13 @@ def predict(image):
 
 def print_data(pokelist):
     url = 'https://pokeapi.co/api/v2/pokemon/'
-    df = pd.DataFrame(data=np.zeros((5, 3)),
-                      columns=['Name',  'Type', 'Description'],
+    df = pd.DataFrame(data=np.zeros((5, 4)),
+                      columns=['Name',  'Type', 'Description', 'Image'],
                       index=np.linspace(1, 5, 5, dtype=int)
                       )
     i = 0
+    sprites_path = 'https://github.com/GunjanDhanuka/PokeDex_Classifier/blob/master/sprites/'
+    sprites = []
     for poke in pokelist:
         response = requests.get(url+poke.lower())
         if(response.status_code != 200):
@@ -243,10 +247,12 @@ def print_data(pokelist):
             df.iloc[i, 0] = poke
             df.iloc[i, 1] = 'Error fetching data from API'
             df.iloc[i, 2] = 'Error fetching data from API'
+            sprites.append(sprites_path+'0.png')
 
         else:
             jresponse = response.json()
             type = jresponse['types'][0]['type']['name']
+            id = jresponse['id']
             species_url = jresponse['species']['url']
             species_response = requests.get(species_url)
             species_response = species_response.json()
@@ -260,11 +266,13 @@ def print_data(pokelist):
             description = description.replace('\n', ' ')
             description = description.replace('', ' ')
             df.iloc[i, 2] = description
+            sprites.append(sprites_path+str(id)+'.png')
+            
         i += 1
-
+    df['Image'] = sprites
     st.title("Here are the five most likely Pokemons")
     st.caption("in decreasing order of confidence..")
-    st.write(df.to_html(escape=False), unsafe_allow_html=True)
+    st.write(df.to_html(escape=False, formatters=dict(Image=path_to_image_html)), unsafe_allow_html=True)
 
 
 if __name__ == "__main__":
