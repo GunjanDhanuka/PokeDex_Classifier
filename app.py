@@ -183,7 +183,7 @@ def main():
 
     file_uploaded = st.file_uploader(
         "Choose File", type=["png", "jpg", "jpeg"])
-    class_btn = st.button("Classify")
+    class_btn = st.button("CLASSIFY!!")
     if file_uploaded is not None:
         image = Image.open(file_uploaded)
         st.image(image, caption='Uploaded Image', use_column_width=True)
@@ -201,6 +201,7 @@ def main():
     st.caption('''The model uses Transfer Learning from the DenseNet201 model to classify the images into 150 different classes.
     First the images are resized according to the model input and then using a Softmax layer at the end, we compute the probability of the image to be one of 150 Pokemon. 
 The model might have some difficulty in differentiating between evolved forms of a Pokemon for example Pidgeotto and Pidgeot!.''')
+    st.image('git_images/kanto.png')
 
 
 def predict(image):
