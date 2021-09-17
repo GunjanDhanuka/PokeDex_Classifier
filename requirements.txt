@@ -4,8 +4,8 @@ altair==4.1.0
 anaconda-client
 appdirs==1.4.4
 argh==0.26.2
-argon2-cffi @ file:///tmp/build/80754af9/argon2-cffi_1596828493937/work
-asn1crypto @ file:///tmp/build/80754af9/asn1crypto_1596577642040/work
+argon2-cffi
+asn1crypto
 astor==0.8.1
 astroid==2.5.1
 astropy==4.0.2
