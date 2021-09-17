@@ -20,8 +20,12 @@ You can read more about the architecture over [here](https://arxiv.org/pdf/1608.
 ## About the Application
 So after building the model, I wanted to make it to some use for everyone *(and also for some show-off)*. I read about the Streamlit framework that allows you to create beautiful apps for your ML/DL projects. 
 
-Then I deployed the model on Heroku as it is a popular free choice for us students and is reasonably good for the use-case.
+After the images are classified according to the saved model, I have used the **[PokeAPI](https://pokeapi.co/)** to fetch details of the Pokemon that include its Type and Description. *I will also be adding the sprites for each Pokemon soon.*
 
+Then the model was deployed on Heroku as it is a popular free choice for us students and is reasonably good for the use-case.
+
+### Screencast
+![Screencast](git_images/screencast.mov)
 ### Future additions:
 - Add more verbosity to the model.
 - Print images of Pokemon in the results.
