@@ -4,8 +4,6 @@
 
 I have always been an avid Pokemon fan and spent a lot of my time on the FireRed and Emerald games :p
 
-![Kanto](git_images/kanto.png)
-
 So after learning about Image Classification using CNNs and about Transfer Learning, this idea of making a real-life PokeDex struck my mind.
 
 ### Screencast
@@ -35,3 +33,4 @@ Then the model was deployed on Heroku as it is a popular free choice for us stud
 
 
 *Feel free to give suggestions or point out flaws in the application. I am only learning and would love to make this better.*
+![Kanto](git_images/kanto.png)
