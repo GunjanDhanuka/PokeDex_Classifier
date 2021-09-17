@@ -250,7 +250,9 @@ def print_data(pokelist):
                     break
             df.iloc[i, 0] = poke.capitalize()
             df.iloc[i, 1] = type.capitalize()
-            df.iloc[i, 2] = description.replace('\n', ' ')
+            description = description.replace('\n', ' ')
+            description = description.replace('', ' ')
+            df.iloc[i, 2] = description
         i += 1
 
     st.title("Here are the five most likely Pokemons")
