@@ -10,6 +10,11 @@ from tensorflow.keras import preprocessing
 import time
 import requests
 
+st.set_page_config(
+    page_title='Poke-Dex',
+    page_icon='./git_images/pokedex.png'
+)
+
 class_names = ['Abra',
                'Aerodactyl',
                'Alakazam',
@@ -162,7 +167,7 @@ class_names = ['Abra',
                'Zubat']
 
 fig = plt.figure()
-
+st.image('./git_images/pokedex.png', width=400)
 st.title('PokeDex!')
 st.subheader("Gotta catch 'em all..")
 
@@ -175,6 +180,7 @@ Just click an image :camera: and upload it to see which Pokemon it is.'''
 
 
 def main():
+
     file_uploaded = st.file_uploader(
         "Choose File", type=["png", "jpg", "jpeg"])
     class_btn = st.button("Classify")
