@@ -33,4 +33,7 @@ Then the model was deployed on Heroku as it is a popular free choice for us stud
 
 
 *Feel free to give suggestions or point out flaws in the application. I am only learning and would love to make this better.*
+
+
+***Star the repo and share with your friends if you found this cool!***
 ![Kanto](git_images/kanto.png)
