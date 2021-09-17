@@ -10,10 +10,10 @@ from tensorflow.keras import preprocessing
 import time
 import requests
 
-# st.set_page_config(
-#     page_title='Poke-Dex',
-#     page_icon='./git_images/pokedex.png'
-# )
+st.set_page_config(
+    page_title='Poke-Dex',
+    page_icon='./git_images/pokedex.png'
+)
 
 class_names = ['Abra',
                'Aerodactyl',
@@ -247,7 +247,7 @@ def print_data(pokelist):
             df.iloc[i, 0] = poke
             df.iloc[i, 1] = 'Error fetching data from API'
             df.iloc[i, 2] = 'Error fetching data from API'
-            sprites.append(sprites_path+'0.png')
+            sprites.append(sprites_path+'0.png?raw=true')
 
         else:
             jresponse = response.json()
@@ -266,7 +266,7 @@ def print_data(pokelist):
             description = description.replace('\n', ' ')
             description = description.replace('', ' ')
             df.iloc[i, 2] = description
-            sprites.append(sprites_path+str(id)+'.png')
+            sprites.append(sprites_path+str(id)+'.png?raw=true')
             
         i += 1
     df['Image'] = sprites
