@@ -217,7 +217,7 @@ def predict(image):
         result.append(class_names[highest[i]])
         i += 1
 
-    return result
+    return result, highest
 
 
 def print_data(pokelist):
