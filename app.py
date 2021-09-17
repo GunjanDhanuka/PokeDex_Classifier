@@ -10,10 +10,10 @@ from tensorflow.keras import preprocessing
 import time
 import requests
 
-st.set_page_config(
-    page_title='Poke-Dex',
-    page_icon='./git_images/pokedex.png'
-)
+# st.set_page_config(
+#     page_title='Poke-Dex',
+#     page_icon='./git_images/pokedex.png'
+# )
 
 class_names = ['Abra',
                'Aerodactyl',
