@@ -8,6 +8,9 @@ I have always been an avid Pokemon fan and spent a lot of my time on the FireRed
 
 So after learning about Image Classification using CNNs and about Transfer Learning, this idea of making a real-life PokeDex struck my mind.
 
+### Screencast
+https://user-images.githubusercontent.com/68523530/133782398-672c750c-7589-4a4e-a769-6ce456a9e6f0.mov
+
 ## About the Model
 The data for training was collected from [this Kaggle Dataset](https://www.kaggle.com/lantian773030/pokemonclassification) and Tensorflow framework was used for Data Augmentation and Model building. 
 
@@ -24,8 +27,7 @@ After the images are classified according to the saved model, I have used the **
 
 Then the model was deployed on Heroku as it is a popular free choice for us students and is reasonably good for the use-case.
 
-### Screencast
-![Screencast](git_images/screencast.mov)
+
 ### Future additions:
 - Add more verbosity to the model.
 - Print images of Pokemon in the results.
