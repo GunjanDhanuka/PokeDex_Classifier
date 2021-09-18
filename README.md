@@ -24,6 +24,7 @@ So after building the model, I wanted to make it to some use for everyone *(and 
 After the images are classified according to the saved model, I have used the **[PokeAPI](https://pokeapi.co/)** to fetch details of the Pokemon that include its Type and Description. The sprites have been downloaded from the PokeAPI GitHub Sprites Repo.
 
 Then the model was deployed on Heroku as it is a popular free choice for us students and is reasonably good for the use-case.
+_I also got the invite for Streamlit Share so I have deployed the app over there as well, since it is faster than the Heroku deploy._
 
 
 ### Future additions:
