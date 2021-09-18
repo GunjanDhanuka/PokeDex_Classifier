@@ -1,6 +1,6 @@
 ![PokeDex_Classifier](https://socialify.git.ci/GunjanDhanuka/PokeDex_Classifier/image?description=1&descriptionEditable=Your%20friend%20in%20the%20Kalos%20Region!%20Built%20with%20the%20power%20of%20DenseNet201%20and%20Streamlit!&logo=https%3A%2F%2Fgithub.com%2FGunjanDhanuka%2FPokeDex_Classifier%2Fblob%2Fmaster%2Fgit_images%2Fpokedex.png%3Fraw%3Dtrue&owner=1&pattern=Diagonal%20Stripes&stargazers=1&theme=Light)
 
-**Before moving on the documentation, check out the app live at [here](https://pokedexgd.herokuapp.com/)**
+**Before moving on the documentation, check out the app live at [Heroku](https://pokedexgd.herokuapp.com/) or [Streamlit Share(faster)](https://share.streamlit.io/gunjandhanuka/pokedex_classifier/app.py)**
 
 I have always been an avid Pokemon fan and spent a lot of my time on the FireRed and Emerald games :p
 
