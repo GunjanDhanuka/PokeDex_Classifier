@@ -172,8 +172,8 @@ st.title('PokeDex!')
 st.subheader("Gotta catch 'em all..")
 
 st.markdown(
-    '''This tool will help you identify :the Pokemon you encounter in your way in the **Kanto Region.** *Generation 1.* :jp:
-Just click an image :camera: and upload it to see which Pokemon it is.'''
+    '''- This tool will help you identify :the Pokemon you encounter in your way in the **Kanto Region** *(Generation 1).* :jp:
+- Just click an image :camera: and upload it to see which Pokemon it is.'''
 )
 
 
@@ -200,8 +200,12 @@ def main():
     st.markdown('## How it works?')
     st.caption('''The model uses Transfer Learning from the DenseNet201 model to classify the images into 150 different classes.
     First the images are resized according to the model input and then using a Softmax layer at the end, we compute the probability of the image to be one of 150 Pokemon. 
-The model might have some difficulty in differentiating between evolved forms of a Pokemon for example Pidgeotto and Pidgeot!.''')
+The model might have some difficulty in differentiating between evolved forms of a Pokemon, for example Pidgeotto and Pidgeot!. However you are free to try your own quirky images as well :p''')
     st.image('git_images/kanto.png')
+    st.markdown('''
+    *Built with :heart: by [Gunjan Dhanuka](https://github.com/GunjanDhanuka).*
+*Show some love to this project by starring and sharing the repository on [GitHub](https://github.com/GunjanDhanuka/PokeDex_Classifier) !*
+    ''')
 
 def path_to_image_html(path):
     return '<img src="'+ path + '" width="60" >'
