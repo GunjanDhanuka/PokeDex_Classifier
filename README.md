@@ -16,24 +16,24 @@ The model achieved an accuracy of approximately 87% on the test dataset.
 
 Here is an overview of the DenseNet201 Model:
 ![DenseNet201](git_images/densenet.jpeg).
-You can read more about the architecture over [here](https://arxiv.org/pdf/1608.06993).
+You can read more about the architecture on [this blog](https://towardsdatascience.com/review-densenet-image-classification-b6631a8ef803) and [original paper](https://arxiv.org/pdf/1608.06993).
 
 ## About the Application
 So after building the model, I wanted to make it to some use for everyone *(and also for some show-off)*. I read about the Streamlit framework that allows you to create beautiful apps for your ML/DL projects. 
 
-After the images are classified according to the saved model, I have used the **[PokeAPI](https://pokeapi.co/)** to fetch details of the Pokemon that include its Type and Description. *I will also be adding the sprites for each Pokemon soon.*
+After the images are classified according to the saved model, I have used the **[PokeAPI](https://pokeapi.co/)** to fetch details of the Pokemon that include its Type and Description. The sprites have been downloaded from the PokeAPI GitHub Sprites Repo.
 
 Then the model was deployed on Heroku as it is a popular free choice for us students and is reasonably good for the use-case.
 
 
 ### Future additions:
 - Add more verbosity to the model.
-- Print images of Pokemon in the results.
+- ~~Print images of Pokemon in the results.~~
 - Work on the theme of the app.
 
 
 *Feel free to give suggestions or point out flaws in the application. I am only learning and would love to make this better.*
 
 
-***Star the repo and share with your friends if you found this cool!***
+***Don't forget to star the repo and share with your friends if you found this cool!***
 ![Kanto](git_images/kanto.png)
