@@ -28,9 +28,9 @@ _I also got the invite for Streamlit Share so I have deployed the app over there
 
 
 ### Future additions:
-- Add more verbosity to the model.
-- ~~Print images of Pokemon in the results.~~
-- Work on the theme of the app.
+- [ ] Add more verbosity to the model. 
+- [x] Print images of Pokemon in the results.
+- [ ] Work on the theme of the app.
 
 
 *Feel free to give suggestions or point out flaws in the application. I am only learning and would love to make this better.*
